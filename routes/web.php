@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'PageController@home');
+
+Route::get('report', function () {
+    return view('report');
 });
